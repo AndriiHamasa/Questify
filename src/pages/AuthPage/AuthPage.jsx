@@ -1,3 +1,4 @@
+// import BackgroundPart from "../../components/BackgroundPart/BackgroundPart";
 import SignUpForm from "../../components/SignUpForm/SignUpForm";
 import css from "./AuthPage.module.css";
 
@@ -8,6 +9,7 @@ const AuthPage = () => {
 
   return (
     <div className={css.mainContainer}>
+      
       <div className={css.container}>
         <h1 className={css.header}>Questify</h1>
         <p className={css.paragraph_big}>
@@ -17,38 +19,11 @@ const AuthPage = () => {
         <p className={css.paragraph_small}>
           Choose your name to sign up or log in
         </p>
+        <SignUpForm />
       </div>
-
-      <SignUpForm />
-      {window.innerWidth <= 767 && (
-        <>
-          <img
-            className={css.bcImg}
-            src="src/assets/pictures/bgpic1.png"
-            alt="bacgroundForm"
-          />
-          <img
-            className={css.bcImg}
-            src="src/assets/pictures/bgpic2.png"
-            alt="bacgroundForm"
-          />
-        </>
-      )}
-
-      {window.innerWidth >= 768 && window.innerWidth <= 1279 && (
-        <>
-          <img
-            className={css.bcImgTablet1}
-            src="src/assets/pictures/bgpic1_tablet.png"
-            alt="bacgroundForm"
-          />
-          <img
-            className={css.bcImgTablet2}
-            src="src/assets/pictures/bgpic2_tablet.png"
-            alt="bacgroundForm"
-          />
-        </>
-      )}
+      {/* <BackgroundPart/> */}
+      
+      
     </div>
   );
 };

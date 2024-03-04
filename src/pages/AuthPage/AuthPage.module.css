@@ -1,33 +1,18 @@
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .mainContainer {
-    width: 100%;
     height: 100vh;
-    background-image: url("src/assets/pictures/bgpic1.png"); 
-    background-size: cover;
-    background-position: bottom;
-    transform: rotate(-15.35deg); 
+    background-image: url("src/assets/pictures/bgpic2.png"), url("src/assets/pictures/bgpic1.png"); 
+    background-size: auto;
+    background-position: bottom; /* закрепляем изображение внизу центрально */
+    background-repeat: no-repeat;
+
+    /* background-position: bottom; */
+    /* transform: rotate(-15.35deg);  */
   }
-} */
-
-
-.bcImg {
-  position: fixed;
-  bottom: 0;
 }
 
 
 
-.bcImgTablet1{
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* .bcImgTablet2{
-  position: bottom;
-  top: 50%;
-  right: 0;
-} */
 
 .container {
   margin-top: 80px;
@@ -45,6 +30,15 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .container {
+    margin-top: 240px;
+    margin-left: 230px;
+
+    width: 562px;
+  }
+}
+
 
 
 .header {
@@ -56,6 +50,12 @@
   color: #00d7ff;
 }
 
+@media (min-width: 1280px) {
+  .header {
+    margin-bottom: 80px;
+  }
+}
+
 .paragraph_big {
   font-size: 18px;
   font-weight: 700;
@@ -64,6 +64,16 @@
   text-align: left;
   color: #15395a;
 }
+
+@media (min-width: 1280px) {
+  .paragraph_big {
+    font-size: 32px;
+    /* letter-spacing: 0.02em; */
+    line-height: 40px;
+  }
+}
+
+
 
 .paragraph_small {
   font-size: 14px;

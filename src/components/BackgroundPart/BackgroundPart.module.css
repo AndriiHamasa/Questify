@@ -1,0 +1,16 @@
+.bcImg {
+  position: fixed;
+  bottom: 0;
+}
+
+.bcImgTablet1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* .bcImgTablet2{
+    position: bottom;
+    top: 50%;
+    right: 0;
+  } */

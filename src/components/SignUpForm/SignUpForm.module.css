@@ -1,0 +1,65 @@
+.authForm{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  
+  padding: 0px 20px;
+}
+
+.mesContainer{
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+
+  min-height: 75px;
+}
+
+.mesClient{
+  outline: none;
+  border: none;
+
+  width: 148px;
+
+  border-bottom: 2px solid #00D7FF;
+  /* background-color: #FF851C; */
+
+}
+
+.btn {
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+
+  /* position: relative;
+  top: -10px;
+  left: 10px; */
+
+  font-size: 24px;
+  font-weight: 700;
+  /* line-height: 24px; */
+  /* letter-spacing: 0.02em; */
+  /* text-align: center; */
+
+  margin-left: 40px;
+
+  color: #ffffff;
+  background-color: #FF851C;
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 4px rgba(255, 133, 28, 0.4); /* Тінь з тим самим кольором, що й кнопка */
+
+  transition: all 250ms ease;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active{
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(255, 133, 28, 0.6); /* Збільшена тінь при наведенні */
+}

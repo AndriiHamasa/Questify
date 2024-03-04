@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
   .mainContainer {
     height: 100vh;
-    background-image: url("./src/assets/pictures/bgpic2.png"), url("./src/assets/pictures/bgpic1.png"); 
+    background-image: url("../../assets/pictures/bgpic2.png"), url("../../assets/pictures/bgpic1.png"); 
     background-size: auto;
     background-position: bottom; /* закрепляем изображение внизу центрально */
     background-repeat: no-repeat;

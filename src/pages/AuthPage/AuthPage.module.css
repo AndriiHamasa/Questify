@@ -29,6 +29,13 @@
   }
 }
 
+@media (min-width: 1280px){
+  .mainContainer{
+    height: 100vh;
+    background: url("../../assets/pictures/bgpic1_desktop.png") right top no-repeat, url("../../assets/pictures/bgpic2_desktop.png") right bottom no-repeat;
+  }
+}
+
 
 
 
@@ -67,6 +74,7 @@
   letter-spacing: 0.02em;
   /* text-align: left; */
   color: #00d7ff;
+  margin-top: 0;
 }
 
 @media (min-width: 1280px) {

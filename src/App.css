@@ -1,8 +1,12 @@
+@import-normalize;
+
 @font-face {
   font-family: "Helvetica Neue Cyr";
   src: url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
   /* Інші формати шрифту, якщо вони є */
 }
+
+
 
 /* Додаткові стилі, в яких ви використовуєте шрифт */
 body {

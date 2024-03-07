@@ -32,3 +32,8 @@ export const logIn = async (body) => {
     console.log('error in login', error)
   }
 };
+
+export const getProfile = async () => {
+  const { data } = await instance();
+  return data;
+}

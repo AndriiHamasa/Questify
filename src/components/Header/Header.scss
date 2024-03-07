@@ -1,8 +1,100 @@
 .header {
-  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  background-color: #242a37;
   color: white;
 
-  .logo {
-    font-size: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  color: #00d7ff;
+}
+
+.headerNav {
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 12px;
+}
+
+.iconContainer-min{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconContainer-max{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nameLetter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  background-color: #3e4e6c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.nameWord {
+  color: #7b8aa4;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: #00d7ff;
+  box-shadow: 0 0 10px #00d7ff;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 32px;
   }
+  .headerNav {
+    gap: 0;
+  }
+
+  .nameWord {
+    margin-left: 12px;
+  }
+}
+@media (min-width: 1279px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .headerNav {
+    gap: 0;
+  }
+
+  .nameWord {
+    margin-left: 12px;
+  }
+}
+
+// for mobile
+.mobileContainer{
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

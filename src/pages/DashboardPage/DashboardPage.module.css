@@ -1,0 +1,89 @@
+.dashBoardContainer {
+  background-color: #f2f3f7;
+
+  height: 100vh;
+}
+
+.addTaskButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  width: 52px;
+  height: 52px;
+
+  font-size: 32px;
+  font-weight: 100;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #ff851c;
+  box-shadow: 0 0 10px rgba(255, 133, 28, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет тени */
+  color: #ffffff;
+
+  transition: all 250ms ease;
+}
+
+.addTaskButton:hover,
+.addTaskButton:focus{
+  transform: scale(1.1);
+}
+
+.addTaskButton:active{
+  transform: scale(0.9);
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .addTaskButton {
+    right: 32px;
+    bottom: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .addTaskButton {
+    right: 28px;
+  }
+}
+
+
+/* ============= MODAL STYLES START ============= */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.modal-fade-enter {
+  animation: modalFadeIn 0.3s ease forwards;
+}
+
+.modal-fade-exit {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+  animation: modalFadeOut 0.3s ease forwards;
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+}
+/* ============= MODAL STYLES END ============= */
+
